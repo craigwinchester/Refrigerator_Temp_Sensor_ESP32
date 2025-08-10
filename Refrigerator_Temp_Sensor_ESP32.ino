@@ -13,8 +13,8 @@
 #include <math.h>
 
 // ================= Wi-Fi =================
-const char* ssid     = "Twonate";
-const char* password = "somethingeasy";
+const char* ssid     = "my_wifi";
+const char* password = "something";
 
 // ================= Defaults & Settings =================
 // Temperature thresholds (editable via web UI)
@@ -23,12 +23,12 @@ float FRIDGE_HIGH  = 46.0f;   // Alert if > 46°F (out of safe range)
 float FREEZER_HIGH = 10.0f;   // Alert if freezer > 10°F
 
 // Email settings (editable via web UI except password)
-String SMTP_HOST_STR   = "mail.lofi-wines.com";
+String SMTP_HOST_STR   = "mail.something.com";
 uint16_t SMTP_PORT_VAL = 465;                  // 465 (SSL) or 587 (STARTTLS)
-String AUTHOR_EMAIL_S  = "fridge_monitor@lofi-wines.com";
-String RECIPIENT_EMAIL_S = "craig@lofi-wines.com";
-// Keep password hardcoded; do not expose in UI
-#define AUTHOR_PASSWORD "itsSOcold!!"
+String AUTHOR_EMAIL_S  = "fridge_monitor@something.com";
+String RECIPIENT_EMAIL_S = "YOU@something.com";
+
+#define AUTHOR_PASSWORD ""
 
 // Runtime Testing flag (editable via web UI)
 bool testingMode = false;
